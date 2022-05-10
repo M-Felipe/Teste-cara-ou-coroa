@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow:wght@700&family=Righteous&family=Sarala&display=swap');
+
+body{
+  font-family: Righteous;
+  font-size: 500;
+  background: #282a36;
+}
+
+hr{
+  padding: 3px;
+  background-color: aliceblue;
+}
+
+.coin{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 5% 34%;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.corpo {
+  position: absolute;
+  background-color: rgba(56, 70, 70, 0.8);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 15px;
+  color: aliceblue;
+}
+
+.botao{
+  padding: 10px;
+}
+
+.start-button{
+  position: relative;
+  margin: 10% 38%;
+  border: 2px solid hsl(158, 89%, 30%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  text-decoration: none;
+  color: aliceblue;
+  background: #282a36;
+}
+
+.start-button::before{
+  content: '';
+  border: 2px solid hsl(158, 98%, 43%);
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  transition: .3s;
+  animation: button 3s infinite;
+}
+
+@keyframes button{
+  0%{box-shadow: 0 0 8px hsl(158, 98%, 43%);}
+  50%{box-shadow: 0 0 50px hsl(158, 98%, 43%);}
+}
